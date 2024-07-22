@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Press Game</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <h1>Quick Press Game</h1>
+    <div class="rule-rank">
+        <div class="rule">
+            <h2>▼ルール</h2>
+            <table>
+                <tr>
+                    <td>概要：</td>
+                    <td>制限時間内で赤い箱を何回クリックできたかでランクが決定します。</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Enterを押すとゲームスタート</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>制限時間：30秒</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>ランダムで出現する赤い箱をクリックすると1点加点</td>
+                </tr>
+            </table>
+        </div>
+        <div class="rank">
+            <h2>▼ランク</h2>
+            <table>
+                <tr>
+                    <td>S.</td>
+                    <td>30点以上</td>
+                </tr>
+                <tr>
+                    <td>A.</td>
+                    <td>25点以上30点未満</td>
+                </tr>
+                <tr>
+                    <td>B.</td>
+                    <td>20点以上25点未満</td>
+                </tr>
+                <tr>
+                    <td>C.</td>
+                    <td>20点未満</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div>
+            <span>TIME：<span id="time">30</span></span>
+        </div>
+        <div>
+            <span>SCORE</span>
+            <span id="score">0</span>
+        </div>
+    </div>
+
+    <div class="canvas-box">
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </div>
+</body>
+<script src="/JS/canvas.js"></script>
+
+</html>
